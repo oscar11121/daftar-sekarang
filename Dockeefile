@@ -1,0 +1,8 @@
+# Pakai PHP dengan Apache bawaan
+FROM php:8.2-apache
+
+# Salin semua file project ke web root
+COPY . /var/www/html/
+
+# Expose port 80 untuk web
+EXPOSE 80
